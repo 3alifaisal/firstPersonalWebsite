@@ -1,0 +1,143 @@
+.dim-overlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(204, 213, 219, 0.92);
+    /* Foggy blue background */
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    /* Allows clicks to pass through the overlay */
+
+}
+
+
+
+#hidden-input {
+    display: none;
+}
+
+#hidden-input:checked~.b_header {
+    display: none;
+}
+
+
+@keyframes diming {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes showMessage {
+    0% {
+
+        font-size: 10px;
+        opacity: 0;
+        background-color: white;
+
+    }
+
+    10% {
+
+        font-size: 20px;
+        opacity: 1;
+        transform: translate(-100%, -50%) ;
+        box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        border: 1px solid rgba(204, 213, 219, 0.92);
+
+
+    }
+
+    90% {
+
+        font-size: 20px;
+        opacity: 1;
+        transform: translate(-100%, -50%);
+        box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        border: 1px solid rgba(204, 213, 219, 0.92);
+
+
+    }
+
+    100% {
+        font-size: 10px;
+        opacity: 0;
+        background-color: white;
+        transform: translate(0%, 0%);
+    }
+}
+
+#hidden-input:checked~.hidden-text {
+    animation: showMessage 5s ease-out;
+}
+
+#hidden-input:checked~.dim-overlay {
+    animation: diming 5s ease-out;
+}
+
+.hidden-text {
+    font-family: "Open-sans";
+    
+
+    opacity: 0;
+    font-size: 10px;
+
+    pointer-events: none;
+    user-select: none;
+    z-index: 4;
+    padding: 30px;
+    width: max-content;
+   
+}
+
+
+
+
+
+
+.icon-wrapper {
+    display: inline-flex;
+    padding: 3px 5px;
+
+
+    font-size: 20pt;
+}
+
+
+
+
+.hint-button {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.button-name {
+    display: inline-block;
+    font-size: 15pt;
+    font-family: "Merriweather";
+
+    border: none;
+
+
+    opacity: 0.5;
+
+    transition: all 0.3 s ease-in-out;
+    color: black;
+    margin-top: 5px;
+    margin-right: 10px;}
