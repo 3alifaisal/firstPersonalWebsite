@@ -14,7 +14,7 @@
     
     position: relative;
    
-    transition: all 0.3s ;
+    transition: all 0.3s ease ;
     z-index: 1;
     padding-right: 40px;
   }
@@ -35,7 +35,12 @@
 
   }
 
-  .dim-overlay-sections {
+  .e_dim-overlay-sections,
+  .c_dim-overlay-sections,
+  .ee_dim-overlay-sections,
+  .l_dim-overlay-sections,
+  .sk_dim-overlay-sections,
+  .co_dim-overlay-sections {
 
       position: fixed;
       top: 0;
@@ -71,13 +76,13 @@
   }
 
 
-  #e_toggle-checkbox:checked~.dim-overlay-sections,
-  #c_toggle-checkbox:checked~.dim-overlay-sections,
-  #ee_toggle-checkbox:checked~.dim-overlay-sections,
-  #l_toggle-checkbox:checked~.dim-overlay-sections,
-  #sk_toggle-checkbox:checked~.dim-overlay-sections,
-  #co_toggle-checkbox:checked~.dim-overlay-sections{
-      opacity: 1;
+  #e_toggle-checkbox:checked~.e_dim-overlay-sections,
+  #c_toggle-checkbox:checked~.c_dim-overlay-sections,
+  #ee_toggle-checkbox:checked~.ee_dim-overlay-sections,
+  #l_toggle-checkbox:checked~.l_dim-overlay-sections,
+  #sk_toggle-checkbox:checked~.sk_dim-overlay-sections,
+  #co_toggle-checkbox:checked~.co_dim-overlay-sections{
+      opacity: 0.93;
       pointer-events: auto;
       /* Enables clicks on the overlay */
   }
