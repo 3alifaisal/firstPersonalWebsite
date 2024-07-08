@@ -1,11 +1,9 @@
 @media print {
-
-
-.header{
+  .header {
     display: none;
-}
- .print_div {
-width: 100%;
+  }
+  .print_div {
+    width: 100%;
     /* Use full width of the A4 page */
     height: 100%;
     /* Use full height of the A4 page */
@@ -13,7 +11,5 @@ width: 100%;
     justify-content: space-between;
 
     /* Include padding and border in the width and height */
-   
-}
-
+  }
 }
