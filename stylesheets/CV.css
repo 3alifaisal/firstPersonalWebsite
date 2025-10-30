@@ -1,114 +1,185 @@
-body{
-    width: 10in;
-    height: 11.69in;
+body {
+  width: 10in;
+  height: 11.69in;
 }
-.name{
-    font-family: 'Merriweather';
-    font-size: 28pt;
-    margin-left: 0.6in;
-    height: 20px;
+.name {
+  font-family: "Merriweather";
+  font-size: 28pt;
+  margin-left: 0.6in;
+  height: 20px;
 }
-.specialFont{
-    color: #1e5f9f;
-    font-weight: bold;
-
-
+.specialFont {
+  color: #1e5f9f;
+  font-weight: bold;
 }
 .normalFont {
-    font-weight:normal;
+  font-weight: normal;
 }
-.strongFont{
-    font-weight: bolder;
+.strongFont {
+  font-weight: bolder;
 }
-.personal-info{
-    font-size: 9pt;
-    margin-left: 0.6in;
-    font-family: "open Sans";
-    margin-bottom: 100px;
+.personal-info {
+  font-size: 9pt;
+  margin-left: 0.6in;
+  font-family: "open Sans";
+  margin-bottom: 100px;
 }
-.mainSide{
-    width: 5in;
+.mainSide {
+  width: 5in;
 }
-.s_education, .s_coursework, .s_extacurricular-experience{
-    margin-left: 0.6in;
+.s_education,
+.s_coursework,
+.s_extacurricular-experience {
+  margin-left: 0.6in;
 
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
 h2 {
-    font-weight: bold;
-    font-family: "open Sans";
+  font-weight: bold;
+  font-family: "open Sans";
 
-    color: #1e5f9f;
-    font-size: 9pt;
+  color: #1e5f9f;
+  font-size: 9pt;
 }
-.h_education, .h_coursework, .h_extracurricular-experience{
-    margin-left: 0.6in;
+.h_education,
+.h_coursework,
+.h_extracurricular-experience {
+  margin-left: 0.6in;
 }
 .date {
-    font-family:"open Sans";
-    font-size: 9pt;
-    font-weight: lighter;
-    opacity: 0.5;
-    margin-left: 0.6in;
+  font-family: "open Sans";
+  font-size: 9pt;
+  font-weight: lighter;
+  opacity: 0.5;
+  margin-left: 0.6in;
 }
 h3 {
-    margin-left:1.6in;
-    font-size: 11pt;
-    width: max-content;
+  margin-left: 1.6in;
+  font-size: 11pt;
+  width: max-content;
 }
- p{
-    margin-left: 1.6in;
-    font-size: 9px;
-    font-family: "Merriweather";
-    opacity: 0.6;
+p {
+  margin-left: 1.6in;
+  font-size: 9px;
+  font-family: "Merriweather";
+  opacity: 0.6;
 }
 
 .profilePic {
-    width:1.13in;
-    height:1.52in;
-    position: absolute;
-    left:5.56in;
-    top:0.6in;
+  width: 1.13in;
+  height: 1.52in;
+  position: absolute;
+  left: 5.56in;
+  top: 0.6in;
 }
- .sidebar{
-    position: absolute;
-    left:5.56in;
-    top:2.3in;
-    width: 2in;
+.sidebar {
+  position: absolute;
+  left: 5.56in;
+  top: 2.3in;
+  width: 2.4in;
+}
+.sidebar h2 {
+  margin-left: 0;            /* don't inherit the page-wide h2 indent */
+  font-weight: bold;
+  font-family: "open Sans";
+  color: #1e5f9f;
+  font-size: 9pt;
+}
+.s_langauges,
+.s_skills,
+.s_coursework-overview {
+  opacity: 0.7;
+  font-family: "Merriweather";
+  font-size: 9pt;
+  padding-left: 0.08in;     /* align content with the sidebar heading */
+  margin: 6px 0 12px 0;
+  text-align: left;         /* ensure left alignment */
+  width: 100%;              /* remove shrink-wrap behavior */
+  box-sizing: border-box;
+}
 
+/* fix: align sidebar headings and sections consistently */
+.sidebar h2 {
+  margin-left: 0;            /* don't inherit the page-wide h2 indent */
+  font-weight: bold;
+  font-family: "open Sans";
+  color: #1e5f9f;
+  font-size: 9pt;
 }
-.s_langauges, .s_skills, .s_coursework-overview{
-    opacity: 0.7;
-    font-family: "Merriweather";
-    font-size:9pt;
 
+/* remove the previous shrink-wrap rule */
+.s_langauges {
+  /* width: max-content;  -- removed */
 }
-/* .header{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    left: 8in;
-    width: 5in;
-}
-.b_header{
-    font-size: 15pt;
-    font-family: "Merriweather";
-    padding-bottom: 100px ;
-    border: none;
-    border-top:1px solid black;
-    background: none;
-    opacity: 0.8;
-    text-decoration: none;
 
-    color: black;
+.project {
+  display: block;
+  margin: 2px 0;
+  font-size: 8pt;
+  font-family: "Merriweather";
+  color: #333;
+  opacity: 0.75;
+  text-decoration: none;
+  word-break: break-word;
 }
-.b_header:hover, .b_header:focus, .b_header:active {
-	background-color: #1e5f9f;
-	color: white;
-    opacity: 1;
-	} */
-.s_langauges{
-    width: max-content;
+
+/* ====== added/changed styles for Projects in the aside ====== */
+.s_coursework-overview {
+  padding-left: 0.1in; /* align with other aside content */
+}
+
+.project_item {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 6px 0;
+  margin: 6px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project_title {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-family: "open Sans";
+  font-size: 10pt;
+  color: #1e5f9f;
+  font-style: italic;
+}
+
+.project a {
+  display: block;
+  margin: 2px 0;
+  font-size: 6pt;
+  font-family: "Merriweather";
+  color: #333;
+  opacity: 0.75;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.project_link {
+  display: inline-block;
+  color: #1e5f9f;
+  font-size: pt;
+  font-family: "Merriweather";
+  margin-left: 0;
+}
+.project_link
+a.project {
+  color: #1e5f9f;
+  text-decoration: underline;
+}
+
+a.project:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.more {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #444;
 }
